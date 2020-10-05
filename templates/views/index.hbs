@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="./img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    {{!-- Font Awesome --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body onload="init()">
+    <div class="main-content" id="main">
+    {{>header}}
+    <p>Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="Enter city name">
+            <button>Search</button>
+        </form>
+    <div class="output" id="1">
+        <div class="head" id="main-h">
+           <img id="wether-image" src="" alt="" srcset="">
+           <i class="far fa-heart" id="heart"></i>
+        </div>
+        <hr>
+        <div>
+           <p id="message-1"></p>
+           <p id="message-2"></p>
+        </div>
+    </div>
+    </div>
+    {{>footer}}
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
